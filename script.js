@@ -26,3 +26,16 @@ console.log(objKeys);
 // console.log(Object.getOwnPropertyNames(obj)); // []
 // console.log(Object.getOwnPropertySymbols(obj)); // [Symbol()]
 // console.log(obj[mySymbol]); // "my value"
+// let fruit = prompt("get", "apple");
+// let bag = { fruit: 5 };
+// alert(bag.fruit);
+
+// # clonning object
+// let user = { a: 9, b: "s" };
+// let user2 = {};
+
+// for (let key in user) {
+//   user2[key] = user[key];
+// }
+// user2.a = 8;
+// console.log(user2, user);
