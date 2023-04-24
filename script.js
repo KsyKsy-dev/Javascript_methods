@@ -45,14 +45,64 @@
 // myObj.a();
 // this keyworld
 
-function myF() {
-  return {
-    name: "why",
-    ref: this,
-  };
-}
-let user = myF();
-console.log(myF());
+// function myF() {
+//   return {
+//     name: "why",
+//     ref() {
+//       return this;
+//     },
+//   };
+// }
+// let user = myF();
+// console.log(user.ref().name);
+
+// # calculator calling methods
+
+// let calculator = {
+//   add() {
+//     return this.a + this.b;
+//   },
+//   multpl() {
+//     return this.a * this.b;
+//   },
+//   read() {
+//     this.a = +prompt("a", 0);
+//     this.b = +prompt("b", 0);
+//   },
+// };
+// calculator.read();
+// alert(calculator.add());
+// alert(calculator.multpl());
+
+// leader exersise
+// let leader = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     console.log(this, "up");
+//     return this;
+//   },
+//   down() {
+//     this.step--;
+//     console.log(this, "down");
+//     return this;
+//   },
+//   showStep() {
+//     console.log(this);
+//     console.log(this.step);
+//     return this;
+//   },
+// };
+// leader.down().up().showStep().up().showStep();
+
+// #01 consructor function
+
+// function User(name) {
+//   this.name = name;
+//   this.admin = false;
+// }
+// let user = new User("hry");
+// console.log(user.name);
 // #1 enteries() is ussed to create an iterator that returns an array of a given object's own unumerable property[key, value].
 
 // const person = {
