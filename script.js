@@ -103,6 +103,61 @@
 // }
 // let user = new User("hry");
 // console.log(user.name);
+
+//#02 Constracor method
+// function User(name) {
+//   this.name = name;
+//   this.gr = function () {
+//     console.log("log " + this.name);
+//   };
+// }
+// let user = new User("Ksy");
+// user.gr();
+// let obj = {};
+
+// function A() {
+//   return obj;
+// }
+// function B() {
+//   return obj;
+// }
+// let a = new A();
+// let b = new B();
+// console.log(a == b);
+
+// function Calculator0(a, b) {
+//   this.a = a;
+//   this.b = b;
+//   this.read = function () {
+//     a = +prompt("number", 0);
+//     b = +prompt("number", 0);
+//     console.log(a, b);
+//   };
+//   this.sum = function () {
+//     return a + b;
+//   };
+//   this.mult = function () {
+//     return a * b;
+//   };
+// }
+// let calk = new Calculator0();
+// calk.read();
+// console.log(calk.sum());
+// console.log(calk.mult());
+
+// #03 constractor exersies accomulate
+
+// function Ac(value) {
+//   this.value = value;
+
+//   this.acc = function () {
+//     this.value += +prompt("v", 0);
+//   };
+// }
+// let accm = new Ac(5);
+// accm.acc();
+// accm.acc();
+// console.log(accm.value);
 // #1 enteries() is ussed to create an iterator that returns an array of a given object's own unumerable property[key, value].
 
 // const person = {
