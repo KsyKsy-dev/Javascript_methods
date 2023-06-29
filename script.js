@@ -158,6 +158,103 @@
 // accm.acc();
 // accm.acc();
 // console.log(accm.value);
+
+// #03 optional chining
+// let obj = {};
+// console.log(obj.adress?.street);
+
+//#04 symbol
+
+// let id = Symbol("is");
+// let obj = {
+//   name: "gt",
+//   age: 22,
+//   [id]: 232,
+// };
+
+// let keys = Object.keys(obj);
+// console.log(keys);
+// console.log(obj[id]);
+
+//#05 Object to primitive
+
+// let obj = {
+//   toString() {
+//     return "2";
+//   },
+// };
+// console.log(obj + 2);
+
+//#06 primitives methods
+
+// let n = Number(0);
+// let map = new Map();
+// console.log(map, typeof map);
+
+// console.log(typeof test);
+
+// if (n) {
+//   console.log("zero");
+// }
+// console.log(typeof n);
+
+// #07 ITERABLE  Symbol.iterator
+
+// let range = {
+//   from: 1,
+//   to: 5,
+//   [Symbol.iterator]() {
+//     (this.current = this.from), (this.last = this.to);
+//   },
+
+//   next() {
+//     if (this.current <= this.to) {
+//       return { done: false, value: this.current++ };
+//     } else {
+//       return { done: true };
+//     }
+//   },
+// };
+// console.log(range);
+
+// # 08 Array.from();
+
+// let arrLike = {
+//   0: "string",
+//   1: "string2",
+//   leggth: 2,
+// };
+// let arr = Array.from(arrLike);
+// console.log(arr);
+//#09 MAP
+
+// let obj = { n: 0, m: 2 };
+
+// let map = new Map(Object.entries(obj));
+// console.log(map);
+
+// let mObj = Object.fromEntries(map);
+// console.log(mObj);
+
+// let arr = [1, 2];
+// // let first = arr[0];
+// // let second = arr[1];
+
+// let [second, first] = arr;
+// console.log(first, second);
+
+// let [a, b, c] = "agc";
+// console.log(a, b, c);
+let user = {};
+[user.name, user.second] = "j s".split(" ");
+console.log(user);
+for (let [key, value] of Object.entries(user)) {
+  console.log(`${key}:${value}`); // name:John, then age:30
+}
+for (let [key, value] of Object.entries(user)) {
+  console.log(`${key}:${value}`);
+}
+
 // #1 enteries() is ussed to create an iterator that returns an array of a given object's own unumerable property[key, value].
 
 // const person = {
