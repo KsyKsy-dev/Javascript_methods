@@ -284,3 +284,10 @@
 // let fruit = prompt("get", "apple");
 // let bag = { fruit: 5 };
 // alert(bag.fruit);
+function text(n, t) {
+  if (t === undefined) {
+    t = "there is no text";
+  }
+  console.log(n, t);
+}
+text("n", undefined);
