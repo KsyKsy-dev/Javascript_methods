@@ -245,15 +245,15 @@
 
 // let [a, b, c] = "agc";
 // console.log(a, b, c);
-let user = {};
-[user.name, user.second] = "j s".split(" ");
-console.log(user);
-for (let [key, value] of Object.entries(user)) {
-  console.log(`${key}:${value}`); // name:John, then age:30
-}
-for (let [key, value] of Object.entries(user)) {
-  console.log(`${key}:${value}`);
-}
+// let user = {};
+// [user.name, user.second] = "j s".split(" ");
+// console.log(user);
+// for (let [key, value] of Object.entries(user)) {
+//   console.log(`${key}:${value}`); // name:John, then age:30
+// }
+// for (let [key, value] of Object.entries(user)) {
+//   console.log(`${key}:${value}`);
+// }
 
 // #1 enteries() is ussed to create an iterator that returns an array of a given object's own unumerable property[key, value].
 
